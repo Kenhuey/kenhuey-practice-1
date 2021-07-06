@@ -1,0 +1,61 @@
+$common-font-size: 14px;
+
+.content {
+	font-size: $common-font-size;
+	line-height: calc(#{$common-font-size} * 2);
+	color: #333333;
+	box-sizing: border-box;
+}
+
+$margin-offset: 40px;
+
+$common-border-redius: 4px;
+
+.conetnet-box{
+	box-shadow: 0 0 8px rgba(0,0,0,0.1);
+	font-size: $common-font-size;
+	margin: 0 auto;
+	margin-top: calc(#{$margin-offset} / 2);
+	margin-bottom: calc(#{$margin-offset} / 2);
+	background: #ffffff;
+	width: calc(100% - #{$margin-offset} - #{$common-font-size});
+	border-radius: $common-border-redius;
+	padding: calc(#{$common-font-size} / 2);
+	padding-left: $common-font-size;
+	padding-right: $common-font-size;
+}
+
+.text-title{
+	font-weight: bold;
+}
+
+$content-font-size: 13px;
+
+.text-content-container{
+	width: 100%;
+	margin-top: calc(#{$content-font-size} / 2);
+	margin-bottom: calc(#{$content-font-size} / 2);
+}
+
+.text-content{
+	font-size: $content-font-size;
+	line-height: calc(#{$content-font-size} * 2);
+	min-height: calc(#{$content-font-size} *2 * 3);
+	width: 100%;
+	&:active{
+		border: none;
+	}
+}
+
+$sub-font-size: 12px;
+
+$sub-font-color: #bfbfbf;
+
+.text-limit-container {
+	text-align: right;
+	font-size: $sub-font-size;
+	line-height: calc(#{$sub-font-size} * 2);
+	color: $sub-font-color;
+}
+
+$pic-border-redius: 2px;
